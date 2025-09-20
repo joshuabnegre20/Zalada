@@ -6,8 +6,8 @@ import NewsFeed from './NewsFeed';
 function App() {
   return (
     <>
-      </Messenger>
-      </NewsFeed>
+      <Messenger/>
+      <NewsFeed/>
     </>
     
     
