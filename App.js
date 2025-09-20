@@ -1,17 +1,15 @@
 import React from 'react';
-import CounterApp from './CounterApp';
-import ColorChangerApp from './ColorChangerApp';
+//import CounterApp from './CounterApp';
+//import ColorChangerApp from './ColorChangerApp';
+import Messenger from './Messenger';
 function App() {
   return (
     <>
-      <CounterApp/>
-      <ColorChangerApp/>
+      </Messenger>
     </>
     
     
     )
-  
-     
-   
+
 }
 export default App;
