@@ -1,6 +1,11 @@
-
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
+import {
+  Text,
+  TextInput,
+  Button,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import styles from './styles';
 
 const NewsFeed = () => {
@@ -29,6 +34,7 @@ const NewsFeed = () => {
   return (
     <View style={styles.newsFeedContainer}>
       <Text style={styles.sectionTitle}>NewsFeed</Text>
+
       <View>
         <Text style={styles.postTitle}>Ethereal</Text>
         <Text style={styles.postContent}>
@@ -37,7 +43,9 @@ const NewsFeed = () => {
       </View>
 
       <TouchableOpacity style={styles.likeButton} onPress={handleLike}>
-        <Text style={styles.likeButtonText}>{liked ? 'Unlike' : 'Like'} ({likes})</Text>
+        <Text style={styles.likeButtonText}>
+          {liked ? 'Unlike' : 'Like'} ({likes})
+        </Text>
       </TouchableOpacity>
 
       {comments.map((comment, index) => (
@@ -50,7 +58,7 @@ const NewsFeed = () => {
         style={styles.input}
         placeholder="Add a comment..."
         value={newComment}
-        onChangeText={text => setNewComment(text)}
+        onChangeText={setNewComment}
       />
       <Button title="Add Comment" onPress={addComment} />
     </View>

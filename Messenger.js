@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from "react";
 import {
   View,
@@ -28,7 +29,7 @@ const contacts = [
   },
 ];
 
-export default function MessengerBot() {
+export default function Messenger() {   
   const [active, setActive] = useState(null);
   const [messages, setMessages] = useState({});
   const [input, setInput] = useState("");
@@ -102,44 +103,18 @@ export default function MessengerBot() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 10, alignItems:  "center" , backgroundColor:"lightpink" },
-
-  // Title spacing
   header: { fontSize: 18, fontWeight: "bold", marginBottom: 12, marginTop: 40 },
-
   contactRow: { flexGrow: 0, marginBottom: 12 },
   contact: { alignItems: "center", marginRight: 12 },
   circle: { width: 40, height: 40, borderRadius: 20, backgroundColor: "#ccc", marginBottom: 4 },
   activeCircle: { backgroundColor: "#87cefa" },
-
-  // Bigger SQUARE chat box (250 x 250 is about 4.5x4.5 inches on many phones)
-  chatWrapper: {
-    width: 250,
-    height: 250,
-    borderWidth: 1,
-    borderColor: "#aaa",
-    padding: 6,
-    marginTop: 10,
-  },
+  chatWrapper: { width: 250, height: 250, borderWidth: 1, borderColor: "#aaa", padding: 6, marginTop: 10 },
   chatTitle: { fontSize: 14, fontWeight: "600", marginBottom: 4, textAlign: "center" },
   chatBox: { flex: 1, padding: 2 },
-  bubble: {
-    padding: 4,
-    marginVertical: 2,
-    borderRadius: 6,
-    maxWidth: "80%",
-  },
+  bubble: { padding: 4, marginVertical: 2, borderRadius: 6, maxWidth: "80%" },
   you: { alignSelf: "flex-end", backgroundColor: "#cde5ff" },
   them: { alignSelf: "flex-start", backgroundColor: "#eee" },
   sender: { fontSize: 10, color: "#666", textAlign: "right" },
-
   inputRow: { flexDirection: "row", marginTop: 4 },
-  input: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 4,
-    marginRight: 4,
-    borderRadius: 4,
-    fontSize: 12,
-  },
+  input: { flex: 1, borderWidth: 1, borderColor: "#ccc", padding: 4, marginRight: 4, borderRadius: 4, fontSize: 12 },
 });
