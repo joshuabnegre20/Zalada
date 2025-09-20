@@ -4,6 +4,7 @@ import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import Messenger from './Messenger';
 import NewsFeed from './NewsFeed';
+<<<<<<< HEAD
 
 const App = () => {
   return (
@@ -28,3 +29,17 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+=======
+function App() {
+  return (
+    <>
+      <Messenger/>
+      <NewsFeed/>
+    </>
+    
+    
+    )
+
+}
+export default App;
+>>>>>>> origin/MidtermAct01
