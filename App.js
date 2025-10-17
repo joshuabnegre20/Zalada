@@ -2,19 +2,19 @@
 //import ColorChangerApp from './ColorChangerApp';
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
-import Messenger from './Messenger';
-import NewsFeed from './NewsFeed';
-<<<<<<< HEAD
-
+//import Messenger from './Messenger';
+//import NewsFeed from './NewsFeed';
+import SEMI_ACT1 from './SEMI_ACT1';
 const App = () => {
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={styles.contentContainer}
+    //<ScrollView
+     // style={styles.container}
+    //  contentContainerStyle={styles.contentContainer}
     >
-      <Messenger />
-      <NewsFeed />
-    </ScrollView>
+  {/* <Messenger />*/}
+   {/* }<NewsFeed /> */}
+    {/*</ScrollView>*/}
+    <SEMI_ACT1 />
   );
 };
 
@@ -29,17 +29,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-=======
-function App() {
-  return (
-    <>
-      <Messenger/>
-      <NewsFeed/>
-    </>
-    
-    
-    )
-
-}
-export default App;
->>>>>>> origin/MidtermAct01
