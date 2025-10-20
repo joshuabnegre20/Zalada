@@ -1,13 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {View, Text, Pressable, Animated, StyleSheet, ActivityIndicator} from 'react-native';
 
-// ShopButton - reusable React Native button for an online shop
-// Features:
-// - Title, subtitle (e.g. price)
-// - Optional small badge (e.g. "Sale" or quantity)
-// - Press scale animation + ripple-like feedback using opacity
-// - Disabled and loading states
-// - Easy to customize via style props
+
 
 export default function ShopButton({
   title = 'Add to Cart',
@@ -131,14 +125,3 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
-
-// Usage example (place inside any screen):
-// <ShopButton
-//   title="Buy Now"
-//   subtitle="$19.99"
-//   badge="SALE"
-//   onPress={() => console.log('buy')}
-// />
-
-// You can customize colors and fonts by passing a style prop or wrapping this
-// component in a higher-order component that provides theme values.
